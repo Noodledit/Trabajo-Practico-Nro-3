@@ -13,5 +13,11 @@ namespace TP_Grupo_12
         {
 
         }
+
+        protected void btnGuardarLocalidad_Click(object sender, EventArgs e)
+        {
+            string localidad = txtLocalidad.Text;
+            ddsLocalidades.Items.Add(localidad);
+        }
     }
 }

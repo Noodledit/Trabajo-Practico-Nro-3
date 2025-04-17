@@ -84,7 +84,7 @@
             <td class="auto-style10">&nbsp;</td>
             <td class="auto-style2">&nbsp;</td>
             <td class="auto-style4">
-                <asp:Button ID="btnGuardarLocalidad" runat="server" Height="20px" Text="Guardar Localidad" Width="128px" />
+                <asp:Button ID="btnGuardarLocalidad" runat="server" Height="20px" Text="Guardar Localidad" Width="128px" OnClick="btnGuardarLocalidad_Click" />
             </td>
             <td class="auto-style3">&nbsp;</td>
             <td>&nbsp;</td>
