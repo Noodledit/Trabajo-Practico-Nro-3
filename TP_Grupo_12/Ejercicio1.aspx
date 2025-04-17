@@ -175,7 +175,9 @@
         </tr>
         <tr>
             <td class="auto-style2">&nbsp;</td>
-            <td class="auto-style4">&nbsp;</td>
+            <td class="auto-style4">
+                <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" />
+            </td>
             <td class="auto-style3">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -184,6 +186,7 @@
         </tr>
     </table>
         <div>
+            <asp:Button ID="btnInicio" runat="server" Text="Ir a inicio .aspx" />
         </div>
     </form>
 </body>
