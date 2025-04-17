@@ -72,7 +72,9 @@
         </tr>
         <tr>
             <td class="auto-style2">&nbsp;</td>
-            <td class="auto-style4">&nbsp;</td>
+            <td class="auto-style4">
+                <asp:Button ID="btnGuardarLocalidad" runat="server" Height="20px" Text="Guardar Localidad" Width="128px" />
+            </td>
             <td class="auto-style3">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -90,7 +92,9 @@
         </tr>
         <tr>
             <td class="auto-style2">&nbsp;</td>
-            <td class="auto-style4">&nbsp;</td>
+            <td class="auto-style4">
+                <asp:Label ID="lblUsuarios" runat="server" Font-Bold="True" Font-Size="15pt" Text="Usuarios"></asp:Label>
+            </td>
             <td class="auto-style3">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -129,13 +133,13 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style2">&nbsp;</td>
-            <td class="auto-style4">&nbsp;</td>
-            <td class="auto-style3">&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
+            <td class="auto-style5"></td>
+            <td class="auto-style6"></td>
+            <td class="auto-style7"></td>
+            <td class="auto-style8"></td>
+            <td class="auto-style8"></td>
+            <td class="auto-style8"></td>
+            <td class="auto-style8"></td>
         </tr>
         <tr>
             <td class="auto-style2">CP:</td>
