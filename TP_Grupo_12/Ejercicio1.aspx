@@ -118,7 +118,7 @@
             <td class="auto-style10">&nbsp;</td>
             <td class="auto-style2">Nombre Usuario:</td>
             <td class="auto-style4">
-                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtUsuario" runat="server"></asp:TextBox>
             </td>
             <td class="auto-style3">&nbsp;</td>
             <td>&nbsp;</td>
@@ -130,7 +130,7 @@
             <td class="auto-style10">&nbsp;</td>
             <td class="auto-style2">Contraseña:</td>
             <td class="auto-style4">
-                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtClave" runat="server" TextMode="Password"></asp:TextBox>
             </td>
             <td class="auto-style3">&nbsp;</td>
             <td>&nbsp;</td>
@@ -140,8 +140,10 @@
         </tr>
         <tr>
             <td class="auto-style10">&nbsp;</td>
-            <td class="auto-style2">&nbsp;</td>
-            <td class="auto-style4">&nbsp;</td>
+            <td class="auto-style2">Repetir Contraseña:</td>
+            <td class="auto-style4">
+                <asp:TextBox ID="txtClave2" runat="server" TextMode="Password"></asp:TextBox>
+            </td>
             <td class="auto-style3">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -150,8 +152,10 @@
         </tr>
         <tr>
             <td class="auto-style9">&nbsp;</td>
-            <td class="auto-style5"></td>
-            <td class="auto-style6"></td>
+            <td class="auto-style5">Correo electrónico</td>
+            <td class="auto-style6">
+                <asp:TextBox ID="txtMail" runat="server"></asp:TextBox>
+            </td>
             <td class="auto-style7"></td>
             <td class="auto-style8"></td>
             <td class="auto-style8"></td>
