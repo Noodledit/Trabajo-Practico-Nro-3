@@ -125,8 +125,10 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style2">&nbsp;</td>
-            <td class="auto-style4">&nbsp;</td>
+            <td class="auto-style2">CP:</td>
+            <td class="auto-style4">
+                <asp:TextBox ID="txtCp" runat="server"></asp:TextBox>
+            </td>
             <td class="auto-style3">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -134,8 +136,11 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style2">&nbsp;</td>
-            <td class="auto-style4">&nbsp;</td>
+            <td class="auto-style2">Localidades:</td>
+            <td class="auto-style4">
+                <asp:DropDownList ID="ddsLocalidades" runat="server">
+                </asp:DropDownList>
+            </td>
             <td class="auto-style3">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
