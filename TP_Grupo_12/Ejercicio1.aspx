@@ -74,7 +74,9 @@
             <td class="auto-style4">
                 <asp:TextBox ID="txtLocalidad" runat="server"></asp:TextBox>
             </td>
-            <td class="auto-style3">&nbsp;</td>
+            <td class="auto-style3">
+                <asp:RegularExpressionValidator ID="revLocalidad" runat="server" ControlToValidate="txtLocalidad" ValidationExpression="^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ ]+$">*</asp:RegularExpressionValidator>
+            </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
