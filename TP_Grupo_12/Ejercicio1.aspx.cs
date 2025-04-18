@@ -16,8 +16,25 @@ namespace TP_Grupo_12
 
         protected void btnGuardarLocalidad_Click(object sender, EventArgs e)
         {
-            string localidad = txtLocalidad.Text;
+            string localidad = txtLocalidad.Text.Trim();
+
+            foreach (ListItem item in ddsLocalidades.Items)
+            {
+
+                if (item.Text.Equals(localidad, StringComparison.OrdinalIgnoreCase))
+                {
+
+                    //Aqui va el Mensaje al Label
+                    return;
+                    
+                }
+
+            }
+
             ddsLocalidades.Items.Add(localidad);
+
+
+
         }
     }
 }
