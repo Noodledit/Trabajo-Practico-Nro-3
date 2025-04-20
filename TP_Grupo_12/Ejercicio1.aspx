@@ -218,7 +218,7 @@
             <td class="auto-style10">&nbsp;</td>
             <td class="auto-style2">CP:</td>
             <td class="auto-style4">
-                <asp:TextBox ID="txtCp" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtCp" runat="server" TextMode="Number"></asp:TextBox>
             </td>
             <td class="auto-style3">
                 <asp:RequiredFieldValidator ID="rfvCp" runat="server" ControlToValidate="txtCp" ErrorMessage="*" ForeColor="#CC0000">Obligatorio</asp:RequiredFieldValidator>
