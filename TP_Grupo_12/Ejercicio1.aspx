@@ -14,7 +14,7 @@
             width: 144px;
         }
         .auto-style3 {
-            width: 110px;
+            width: 29px;
         }
         .auto-style4 {
             width: 142px;
@@ -28,7 +28,7 @@
             height: 23px;
         }
         .auto-style7 {
-            width: 110px;
+            width: 29px;
             height: 23px;
         }
         .auto-style8 {
@@ -54,7 +54,7 @@
             height: 24px;
         }
         .auto-style14 {
-            width: 110px;
+            width: 29px;
             height: 24px;
         }
         .auto-style15 {
@@ -73,7 +73,7 @@
             height: 26px;
         }
         .auto-style19 {
-            width: 110px;
+            width: 29px;
             height: 26px;
         }
         .auto-style20 {
@@ -209,7 +209,9 @@
             <td class="auto-style7">
                 <asp:RequiredFieldValidator ID="rfvCorreo" runat="server" ControlToValidate="txtMail" ErrorMessage="*" ForeColor="#CC0000">Obligatorio</asp:RequiredFieldValidator>
             </td>
-            <td class="auto-style8"></td>
+            <td class="auto-style8">
+                <asp:RegularExpressionValidator ID="revCorreo" runat="server" ControlToValidate="txtMail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">Ingrese un correo electrónico válido</asp:RegularExpressionValidator>
+            </td>
             <td class="auto-style8"></td>
             <td class="auto-style8"></td>
             <td class="auto-style8"></td>
