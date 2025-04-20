@@ -11,30 +11,18 @@ namespace TP_Grupo_12
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void btnGuardarLocalidad_Click(object sender, EventArgs e)
         {
-            string localidad = txtLocalidad.Text.Trim();
-
-            foreach (ListItem item in ddsLocalidades.Items)
-            {
-
-                if (item.Text.Equals(localidad, StringComparison.OrdinalIgnoreCase))
-                {
-
-                    //Aqui va el Mensaje al Label
-                    return;
-                    
-                }
-
-            }
-
+            string localidad = txtLocalidad.Text;
             ddsLocalidades.Items.Add(localidad);
+        }
 
-
-
+        protected void btnGuardarUsuario_Click(object sender, EventArgs e)
+        {
+            lblMensajeError.Text = "El boton funciono";
         }
     }
 }

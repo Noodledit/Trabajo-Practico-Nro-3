@@ -52,11 +52,20 @@
             <td class="auto-style6">
                 <asp:Label ID="lblLocalidades" runat="server" Font-Bold="True" Font-Size="15pt" Text="Localidades"></asp:Label>
             </td>
+            <td class="auto-style7"></td>
+            <td class="auto-style8"></td>
+            <td class="auto-style8"></td>
+            <td class="auto-style8"></td>
+            <td class="auto-style8"></td>
         </tr>
         <tr>
             <td class="auto-style9">&nbsp;</td>
             <td class="auto-style5">&nbsp;</td>
             <td class="auto-style6">&nbsp;</td>
+            <td class="auto-style7">&nbsp;</td>
+            <td class="auto-style8">&nbsp;</td>
+            <td class="auto-style8">&nbsp;</td>
+            <td class="auto-style8">&nbsp;</td>
             <td class="auto-style8">&nbsp;</td>
         </tr>
         <tr>
@@ -65,6 +74,14 @@
             <td class="auto-style4">
                 <asp:TextBox ID="txtLocalidad" runat="server"></asp:TextBox>
             </td>
+            <td class="auto-style3">
+                <asp:RequiredFieldValidator ID="rfvLocalidad" runat="server" ControlToValidate="txtLocalidad">Ingrese localidad</asp:RequiredFieldValidator>
+            </td>
+            <td>
+                <asp:RegularExpressionValidator ID="revLocalidad" runat="server" ControlToValidate="txtLocalidad" ValidationExpression="^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ ]+$">*</asp:RegularExpressionValidator>
+            </td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
@@ -73,12 +90,20 @@
             <td class="auto-style4">
                 <asp:Button ID="btnGuardarLocalidad" runat="server" Height="20px" Text="Guardar Localidad" Width="128px" OnClick="btnGuardarLocalidad_Click" />
             </td>
+            <td class="auto-style3">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style10">&nbsp;</td>
             <td class="auto-style2">&nbsp;</td>
             <td class="auto-style4">&nbsp;</td>
+            <td class="auto-style3">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
@@ -87,6 +112,10 @@
             <td class="auto-style4">
                 <asp:Label ID="lblUsuarios" runat="server" Font-Bold="True" Font-Size="15pt" Text="Usuarios"></asp:Label>
             </td>
+            <td class="auto-style3">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
@@ -95,6 +124,12 @@
             <td class="auto-style4">
                 <asp:TextBox ID="txtUsuario" runat="server"></asp:TextBox>
             </td>
+            <td class="auto-style3">
+                <asp:RequiredFieldValidator ID="rfvNombreUsuario" runat="server" ControlToValidate="txtUsuario" ErrorMessage="*" ForeColor="#CC0000">Obligatorio</asp:RequiredFieldValidator>
+            </td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
@@ -103,6 +138,12 @@
             <td class="auto-style4">
                 <asp:TextBox ID="txtClave" runat="server" TextMode="Password"></asp:TextBox>
             </td>
+            <td class="auto-style3">
+                <asp:RequiredFieldValidator ID="rfvContrasenia" runat="server" ControlToValidate="txtClave" ErrorMessage="*" ForeColor="#CC0000">Obligatorio</asp:RequiredFieldValidator>
+            </td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
@@ -111,6 +152,12 @@
             <td class="auto-style4">
                 <asp:TextBox ID="txtClave2" runat="server" TextMode="Password"></asp:TextBox>
             </td>
+            <td class="auto-style3">
+                <asp:RequiredFieldValidator ID="rfvRepetirContrasenia" runat="server" ControlToValidate="txtClave2" ErrorMessage="*" ForeColor="#CC0000">Obligatorio</asp:RequiredFieldValidator>
+            </td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
@@ -119,6 +166,10 @@
             <td class="auto-style6">
                 <asp:TextBox ID="txtMail" runat="server"></asp:TextBox>
             </td>
+            <td class="auto-style7"></td>
+            <td class="auto-style8"></td>
+            <td class="auto-style8"></td>
+            <td class="auto-style8"></td>
             <td class="auto-style8"></td>
         </tr>
         <tr>
@@ -127,6 +178,10 @@
             <td class="auto-style4">
                 <asp:TextBox ID="txtCp" runat="server"></asp:TextBox>
             </td>
+            <td class="auto-style3">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
@@ -136,20 +191,34 @@
                 <asp:DropDownList ID="ddsLocalidades" runat="server">
                 </asp:DropDownList>
             </td>
+            <td class="auto-style3">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style10">&nbsp;</td>
             <td class="auto-style2">&nbsp;</td>
             <td class="auto-style4">&nbsp;</td>
+            <td class="auto-style3">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style10">&nbsp;</td>
             <td class="auto-style2">&nbsp;</td>
             <td class="auto-style4">
-                <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" />
+                <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" OnClick="btnGuardarUsuario_Click" />
             </td>
+            <td class="auto-style3">
+                <asp:Label ID="lblMensajeError" runat="server"></asp:Label>
+            </td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
@@ -159,6 +228,10 @@
             </td>
             <td class="auto-style4">
                 &nbsp;</td>
+            <td class="auto-style3">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
     </table>
