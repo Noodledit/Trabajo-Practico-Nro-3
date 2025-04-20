@@ -14,7 +14,7 @@
             width: 144px;
         }
         .auto-style3 {
-            width: 213px;
+            width: 110px;
         }
         .auto-style4 {
             width: 142px;
@@ -28,7 +28,7 @@
             height: 23px;
         }
         .auto-style7 {
-            width: 213px;
+            width: 110px;
             height: 23px;
         }
         .auto-style8 {
@@ -40,6 +40,44 @@
         }
         .auto-style10 {
             width: 30px;
+        }
+        .auto-style11 {
+            width: 30px;
+            height: 24px;
+        }
+        .auto-style12 {
+            width: 144px;
+            height: 24px;
+        }
+        .auto-style13 {
+            width: 142px;
+            height: 24px;
+        }
+        .auto-style14 {
+            width: 110px;
+            height: 24px;
+        }
+        .auto-style15 {
+            height: 24px;
+        }
+        .auto-style16 {
+            width: 30px;
+            height: 26px;
+        }
+        .auto-style17 {
+            width: 144px;
+            height: 26px;
+        }
+        .auto-style18 {
+            width: 142px;
+            height: 26px;
+        }
+        .auto-style19 {
+            width: 110px;
+            height: 26px;
+        }
+        .auto-style20 {
+            height: 26px;
         }
     </style>
 </head>
@@ -85,16 +123,16 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style10">&nbsp;</td>
-            <td class="auto-style2">&nbsp;</td>
-            <td class="auto-style4">
+            <td class="auto-style11"></td>
+            <td class="auto-style12"></td>
+            <td class="auto-style13">
                 <asp:Button ID="btnGuardarLocalidad" runat="server" Height="20px" Text="Guardar Localidad" Width="128px" OnClick="btnGuardarLocalidad_Click" />
             </td>
-            <td class="auto-style3">&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
+            <td class="auto-style14"></td>
+            <td class="auto-style15"></td>
+            <td class="auto-style15"></td>
+            <td class="auto-style15"></td>
+            <td class="auto-style15"></td>
         </tr>
         <tr>
             <td class="auto-style10">&nbsp;</td>
@@ -133,18 +171,20 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style10">&nbsp;</td>
-            <td class="auto-style2">Contraseña:</td>
-            <td class="auto-style4">
+            <td class="auto-style16"></td>
+            <td class="auto-style17">Contraseña:</td>
+            <td class="auto-style18">
                 <asp:TextBox ID="txtClave" runat="server" TextMode="Password"></asp:TextBox>
             </td>
-            <td class="auto-style3">
+            <td class="auto-style19">
                 <asp:RequiredFieldValidator ID="rfvContrasenia" runat="server" ControlToValidate="txtClave" ErrorMessage="*" ForeColor="#CC0000">Obligatorio</asp:RequiredFieldValidator>
             </td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
+            <td class="auto-style20">
+                <asp:CompareValidator ID="cvContrasenia" runat="server" ControlToCompare="txtClave" ControlToValidate="txtClave2" ErrorMessage="CompareValidator">Las contraseñas no coinciden</asp:CompareValidator>
+            </td>
+            <td class="auto-style20"></td>
+            <td class="auto-style20"></td>
+            <td class="auto-style20"></td>
         </tr>
         <tr>
             <td class="auto-style10">&nbsp;</td>
