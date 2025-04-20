@@ -24,12 +24,13 @@ namespace TP_Grupo_12
 
         protected void btnGuardarUsuario_Click(object sender, EventArgs e)
         {
-            if (txtCp.Text.Length != 4)
-            {
-                lblMensajeError.Text = "El codigo postal debe tener 4 digitos";
-                return;
-            }
+            
             lblMensajeError.Text = "El boton funciono";
+        }
+
+        protected void txtCp_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

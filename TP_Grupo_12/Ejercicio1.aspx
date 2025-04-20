@@ -126,7 +126,7 @@
             <td class="auto-style11"></td>
             <td class="auto-style12"></td>
             <td class="auto-style13">
-                <asp:Button ID="btnGuardarLocalidad" runat="server" Height="20px" Text="Guardar Localidad" Width="128px" OnClick="btnGuardarLocalidad_Click" CausesValidation="false" />
+                <asp:Button ID="btnGuardarLocalidad" runat="server" Height="20px" Text="Guardar Localidad" Width="128px" OnClick="btnGuardarLocalidad_Click" />
             </td>
             <td class="auto-style14"></td>
             <td class="auto-style15"></td>
@@ -218,7 +218,7 @@
             <td class="auto-style10">&nbsp;</td>
             <td class="auto-style2">CP:</td>
             <td class="auto-style4">
-                <asp:TextBox ID="txtCp" runat="server" TextMode="Number"></asp:TextBox>
+                <asp:TextBox ID="txtCp" runat="server" TextMode="Number" MaxLength="4" OnTextChanged="txtCp_TextChanged"></asp:TextBox>
             </td>
             <td class="auto-style3">
                 <asp:RequiredFieldValidator ID="rfvCp" runat="server" ControlToValidate="txtCp" ErrorMessage="*" ForeColor="#CC0000">Obligatorio</asp:RequiredFieldValidator>
@@ -257,7 +257,7 @@
             <td class="auto-style10">&nbsp;</td>
             <td class="auto-style2">&nbsp;</td>
             <td class="auto-style4">
-                <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" OnClick="btnGuardarUsuario_Click" CausesValidation="false" />
+                <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" OnClick="btnGuardarUsuario_Click" />
             </td>
             <td class="auto-style3">
                 <asp:Label ID="lblMensajeError" runat="server"></asp:Label>
