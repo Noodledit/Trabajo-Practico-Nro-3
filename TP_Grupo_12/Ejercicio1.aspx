@@ -126,7 +126,7 @@
             <td class="auto-style11"></td>
             <td class="auto-style12"></td>
             <td class="auto-style13">
-                <asp:Button ID="btnGuardarLocalidad" runat="server" Height="20px" Text="Guardar Localidad" Width="128px" OnClick="btnGuardarLocalidad_Click" />
+                <asp:Button ID="btnGuardarLocalidad" runat="server" Height="20px" Text="Guardar Localidad" Width="128px" OnClick="btnGuardarLocalidad_Click" CausesValidation="false" />
             </td>
             <td class="auto-style14"></td>
             <td class="auto-style15"></td>
@@ -257,7 +257,7 @@
             <td class="auto-style10">&nbsp;</td>
             <td class="auto-style2">&nbsp;</td>
             <td class="auto-style4">
-                <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" OnClick="btnGuardarUsuario_Click" />
+                <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" OnClick="btnGuardarUsuario_Click" CausesValidation="false" />
             </td>
             <td class="auto-style3">
                 <asp:Label ID="lblMensajeError" runat="server"></asp:Label>

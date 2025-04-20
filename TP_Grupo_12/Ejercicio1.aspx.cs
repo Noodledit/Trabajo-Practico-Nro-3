@@ -18,6 +18,8 @@ namespace TP_Grupo_12
         {
             string localidad = txtLocalidad.Text;
             ddsLocalidades.Items.Add(localidad);
+
+            txtLocalidad.Text = string.Empty;
         }
 
         protected void btnGuardarUsuario_Click(object sender, EventArgs e)
