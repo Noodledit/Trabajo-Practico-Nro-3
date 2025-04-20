@@ -206,7 +206,9 @@
             <td class="auto-style6">
                 <asp:TextBox ID="txtMail" runat="server"></asp:TextBox>
             </td>
-            <td class="auto-style7"></td>
+            <td class="auto-style7">
+                <asp:RequiredFieldValidator ID="rfvCorreo" runat="server" ControlToValidate="txtMail" ErrorMessage="*" ForeColor="#CC0000">Obligatorio</asp:RequiredFieldValidator>
+            </td>
             <td class="auto-style8"></td>
             <td class="auto-style8"></td>
             <td class="auto-style8"></td>
@@ -218,7 +220,9 @@
             <td class="auto-style4">
                 <asp:TextBox ID="txtCp" runat="server"></asp:TextBox>
             </td>
-            <td class="auto-style3">&nbsp;</td>
+            <td class="auto-style3">
+                <asp:RequiredFieldValidator ID="rfvCp" runat="server" ControlToValidate="txtCp" ErrorMessage="*" ForeColor="#CC0000">Obligatorio</asp:RequiredFieldValidator>
+            </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -231,7 +235,9 @@
                 <asp:DropDownList ID="ddsLocalidades" runat="server">
                 </asp:DropDownList>
             </td>
-            <td class="auto-style3">&nbsp;</td>
+            <td class="auto-style3">
+                <asp:RequiredFieldValidator ID="rfvLocalidades" runat="server" ControlToValidate="ddsLocalidades" ErrorMessage="*" ForeColor="#CC0000">Obligatorio</asp:RequiredFieldValidator>
+            </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
