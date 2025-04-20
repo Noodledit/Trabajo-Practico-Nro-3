@@ -32,5 +32,10 @@ namespace TP_Grupo_12
         {
 
         }
+
+        protected void btnInicio_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("PagInicio.aspx");
+        }
     }
 }

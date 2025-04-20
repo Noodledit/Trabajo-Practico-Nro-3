@@ -272,7 +272,7 @@
         <tr>
             <td class="auto-style10">&nbsp;</td>
             <td class="auto-style2">
-            <asp:Button ID="btnInicio" runat="server" Text="Ir a inicio .aspx" />
+            <asp:Button ID="btnInicio" runat="server" Text="Ir a inicio .aspx" CausesValidation="False" OnClick="btnInicio_Click" />
             </td>
             <td class="auto-style4">
                 &nbsp;</td>
