@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -11,7 +12,14 @@ namespace TP_Grupo_12
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack) 
+            {
+                string nombrePagInicio = System.IO.Path.GetFileNameWithoutExtension(Request.Url.AbsolutePath);
+               
 
+
+                lblBienvenido.Text += " " + nombrePagInicio + ".aspx";
+            }
         }
     }
 }

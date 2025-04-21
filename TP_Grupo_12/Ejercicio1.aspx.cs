@@ -16,25 +16,24 @@ namespace TP_Grupo_12
 
         protected void btnGuardarLocalidad_Click(object sender, EventArgs e)
         {
-            string localidad = txtLocalidad.Text.Trim();
-
-            foreach (ListItem item in ddsLocalidades.Items)
+            if (Page.IsValid)
             {
+                string localidad = txtLocalidad.Text.Trim();//trim elimina espacios en blanco al principio y al final
 
-                if (item.Text.Equals(localidad, StringComparison.OrdinalIgnoreCase))
+                // Verificar si ya existe
+                foreach (ListItem item in ddsLocalidades.Items)
                 {
-
-                    
-                    return;
-                    
+                    if (item.Text.Equals(localidad, StringComparison.OrdinalIgnoreCase))
+                    {
+                      
+                        return;
+                    }
                 }
 
+                // Agregar nueva localidad
+                ddsLocalidades.Items.Add(localidad);
+                txtLocalidad.Text = string.Empty;
             }
-
-
-            ddsLocalidades.Items.Add(localidad);
-
-            txtLocalidad.Text = string.Empty;
         }
 
         protected void btnGuardarUsuario_Click(object sender, EventArgs e)
@@ -57,9 +56,12 @@ namespace TP_Grupo_12
                 lblMensajeBienvenida.Font.Bold = true;
                 lblMensajeBienvenida.Text = "Bienvenido " + txtUsuario.Text;
 
-                //lblMensajeError.Text = "El boton funciono";
+            //lblMensajeError.Text = "El boton funciono";
+            txtUsuario.Text = string.Empty;
+            txtMail.Text = string.Empty;
+            txtCp.Text = string.Empty;
+            ddsLocalidades.SelectedIndex = -1;
 
-               
         }
 
         protected void txtCp_TextChanged(object sender, EventArgs e)
@@ -69,7 +71,7 @@ namespace TP_Grupo_12
 
         protected void btnInicio_Click(object sender, EventArgs e)
         {
-            Response.Redirect("PagInicio.aspx");
+            Response.Redirect("Inicio.aspx");
         }
     }
 }
