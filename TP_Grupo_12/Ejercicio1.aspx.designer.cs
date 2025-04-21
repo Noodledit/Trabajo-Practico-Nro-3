@@ -186,6 +186,15 @@ namespace TP_Grupo_12
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCp;
 
         /// <summary>
+        /// Control revCP.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revCP;
+
+        /// <summary>
         /// Control ddsLocalidades.
         /// </summary>
         /// <remarks>
@@ -213,13 +222,13 @@ namespace TP_Grupo_12
         protected global::System.Web.UI.WebControls.Button btnGuardarUsuario;
 
         /// <summary>
-        /// Control lblMensajeError.
+        /// Control lblMensajeBienvenida.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMensajeError;
+        protected global::System.Web.UI.WebControls.Label lblMensajeBienvenida;
 
         /// <summary>
         /// Control btnInicio.

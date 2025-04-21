@@ -16,7 +16,22 @@ namespace TP_Grupo_12
 
         protected void btnGuardarLocalidad_Click(object sender, EventArgs e)
         {
-            string localidad = txtLocalidad.Text;
+            string localidad = txtLocalidad.Text.Trim();
+
+            foreach (ListItem item in ddsLocalidades.Items)
+            {
+
+                if (item.Text.Equals(localidad, StringComparison.OrdinalIgnoreCase))
+                {
+
+                    
+                    return;
+                    
+                }
+
+            }
+
+
             ddsLocalidades.Items.Add(localidad);
 
             txtLocalidad.Text = string.Empty;
@@ -24,8 +39,27 @@ namespace TP_Grupo_12
 
         protected void btnGuardarUsuario_Click(object sender, EventArgs e)
         {
+
+            /*if (txtCp.Text.Length != 4)
+            {
+                lblMensajeError.Text = "El codigo Postal debe tener 4 digitos";
+            }
+            else { 
             
-            lblMensajeError.Text = "El boton funciono";
+             
+                lblMensajeError.Text = string.Empty; 
+            
+               
+            
+            }*/
+
+
+                lblMensajeBienvenida.Font.Bold = true;
+                lblMensajeBienvenida.Text = "Bienvenido " + txtUsuario.Text;
+
+                //lblMensajeError.Text = "El boton funciono";
+
+               
         }
 
         protected void txtCp_TextChanged(object sender, EventArgs e)
